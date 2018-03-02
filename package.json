@@ -1,0 +1,25 @@
+{
+  "name": "ff",
+  "version": "1.0.0",
+  "description": "find a matching friend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumarivb/friendFinder.git"
+  },
+  "author": "kvb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumarivb/friendFinder/issues"
+  },
+  "homepage": "https://github.com/kumarivb/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
