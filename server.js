@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // routes
-// require("./app/routes/apiRoutes")(app);
+require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
 
 // Starts the server to begin listening

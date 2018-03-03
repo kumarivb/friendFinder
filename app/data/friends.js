@@ -111,4 +111,6 @@ var friends = [
             4
         ]
     }
-]
+];
+
+module.exports = friends;
