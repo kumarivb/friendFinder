@@ -1,3 +1,5 @@
+var path = require("path");
+
 // linking routes to "data" source
 var friends = require("../data/friends");
 
@@ -18,10 +20,10 @@ module.exports = function(app) {
 
         // survey results
         var userData = req.body;
-        var userScore = userData.score;
+        var userScores = req.body.scores;
 
         // have to figure out the differences
-        console.log(userScore);
+        console.log(userScores);
 
         var diff = 0;
 
@@ -31,8 +33,8 @@ module.exports = function(app) {
             diff = 0;
 
             // loop again like in timers, use j-best practice
-            for (var j = 0; i < friends[i].score[j]; j++) {
-                diff += math.abs(parseInt(userScore[j]) - parseInt(friends[i].score[j]));
+            for (var j = 0; i < friends[i].scores[j]; j++) {
+                diff += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
                 if (diff <= match.friendDif) {
                     match.name = friends[i].name;
